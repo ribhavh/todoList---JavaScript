@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script data-require="angularjs@*" data-semver="2.0.0" src="https://opensource.keycdn.com/angularjs/tools/typescript.js"></script>
+    <script data-require="angularjs@*" data-semver="2.0.0" src="https://opensource.keycdn.com/angularjs/2.0.0-beta.0/angular2-polyfills.js"></script>
+    <script data-require="angularjs@*" data-semver="2.0.0" src="https://opensource.keycdn.com/angularjs/2.0.0-beta.0/Rx.js"></script>
+    <script data-require="angularjs@*" data-semver="2.0.0" src="https://opensource.keycdn.com/angularjs/2.0.0-beta.0/angular2.dev.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+
+  <body>
+    <h1>To Do List</h1>
+    <div>
+    <button onclick ="handlers.toggleAll()"> Toggle All</button>
+    </div>
+    
+    <div> 
+    <input id = "added" type = "text">
+    <button onclick = "handlers.addToDo()">Add</button>
+    </div>
+    
+    <div> 
+    <input id = "position" type = "number">
+    <input id = "text" type = "text">
+    <button onclick = "handlers.changeToDo()">Change ToDo</button>
+    </div>
+    
+     <div> 
+      <input id = "positionDelete" type = "number">
+      <button onclick = "handlers.deleteToDo()">Delete</button>
+    </div>
+    
+    <div> 
+    <input id = "positionToggle" type = "number">
+    <button onclick = "handlers.toggleCompleted()">Toggle Completed</button>
+    </div>
+    
+    <ul>
+    </ul>
+    
+    <script src="script.js"></script>
+  </body>
+
+</html>
